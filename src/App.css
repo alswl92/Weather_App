@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
-}
+.app{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 650px;
+    height: 100vh;
+    padding: 1.3rem;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .app .search{
+    text-align: center;
   }
-}
+  
+  .app input{
+    padding: .7rem;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    border: 1px solid rgba(0,0,0,0.9);;
+    background: rgba(255,255,255,0.5);
+    width: 50vw;
+  }
+
+  input[type="text"] {
+    color:rgba(0,0,0,0.9);
+  }
+  
+  ::placeholder{
+    color:rgba(0,0,0,.9);
+  }
+
+  .init{
+    display: none;
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20vw;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,.9);
+    border-radius: 12px;
+    margin-bottom: 1.3rem;
+  }
+
+  .Clear{
+    background-image: url(./assets/clear.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Clouds{
+    background-image: url(./assets/cloud.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .Rain{
+    background-image: url(./assets/rain.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
