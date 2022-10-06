@@ -26,7 +26,7 @@ function App() {
   const className = classNames({
     'app Clear' : true,
     'app Rain' : weather === 'Rain' || weather === 'Drizzle' || weather ==='Thunderstorm',
-    'app Clouds' : weather === 'Clouds'
+    'app Clouds' : weather === 'Clouds' || weather === "Mist"
   })
 
   
